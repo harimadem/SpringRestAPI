@@ -40,7 +40,7 @@ public class EmployeeServiceImpl implements EmployeeService{
 	@Override
 	public EmployeeResponseDto fetchDetails(Long id, HttpServletRequest request) {
 		// TODO Auto-generated method stub
-		return null;
+		return repo.findById(id);
 	}
 
 	@Override
@@ -54,6 +54,7 @@ public class EmployeeServiceImpl implements EmployeeService{
 	@Override
 	public void delete(Long id) {
 		// TODO Auto-generated method stub
+		repo.deleteById(id);
 		
 	}
 
