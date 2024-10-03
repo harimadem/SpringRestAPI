@@ -40,6 +40,7 @@ public class EmployeeServiceImpl implements EmployeeService{
 	@Override
 	public EmployeeResponseDto fetchDetails(Long id, HttpServletRequest request) {
 		// TODO Auto-generated method stub
+		//get employee details by using id
 		return repo.findById(id);
 	}
 
